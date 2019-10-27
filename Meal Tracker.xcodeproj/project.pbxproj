@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		691144CE23658791000909D3 /* CellManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691144CD23658791000909D3 /* CellManager.swift */; };
 		69342B6723657E5E00387E20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69342B6623657E5E00387E20 /* AppDelegate.swift */; };
 		69342B6923657E5E00387E20 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69342B6823657E5E00387E20 /* SceneDelegate.swift */; };
 		69342B6B23657E5E00387E20 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69342B6A23657E5E00387E20 /* ViewController.swift */; };
 		69342B6E23657E5E00387E20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69342B6C23657E5E00387E20 /* Main.storyboard */; };
 		69342B7023657E6700387E20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69342B6F23657E6700387E20 /* Assets.xcassets */; };
 		69342B7323657E6700387E20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69342B7123657E6700387E20 /* LaunchScreen.storyboard */; };
+		69342B802365805100387E20 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69342B7F2365805100387E20 /* Meal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		691144CD23658791000909D3 /* CellManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellManager.swift; sourceTree = "<group>"; };
 		69342B6323657E5E00387E20 /* Meal Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Meal Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		69342B6623657E5E00387E20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		69342B6823657E5E00387E20 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		69342B6F23657E6700387E20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		69342B7223657E6700387E20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		69342B7423657E6700387E20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69342B7F2365805100387E20 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +41,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		691144CC2365877B000909D3 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				691144CD23658791000909D3 /* CellManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		69342B5A23657E5D00387E20 = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +68,57 @@
 		69342B6523657E5E00387E20 /* Meal Tracker */ = {
 			isa = PBXGroup;
 			children = (
-				69342B6623657E5E00387E20 /* AppDelegate.swift */,
-				69342B6823657E5E00387E20 /* SceneDelegate.swift */,
-				69342B6A23657E5E00387E20 /* ViewController.swift */,
-				69342B6C23657E5E00387E20 /* Main.storyboard */,
-				69342B6F23657E6700387E20 /* Assets.xcassets */,
-				69342B7123657E6700387E20 /* LaunchScreen.storyboard */,
-				69342B7423657E6700387E20 /* Info.plist */,
+				69342B7A23657EE000387E20 /* App */,
+				691144CC2365877B000909D3 /* Managers */,
+				69342B7E23657FCA00387E20 /* Model */,
+				69342B7B23657F1F00387E20 /* Resources */,
+				69342B7D23657F4700387E20 /* View */,
+				69342B7C23657F3700387E20 /* View Controllers */,
 			);
 			path = "Meal Tracker";
+			sourceTree = "<group>";
+		};
+		69342B7A23657EE000387E20 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				69342B6623657E5E00387E20 /* AppDelegate.swift */,
+				69342B6823657E5E00387E20 /* SceneDelegate.swift */,
+				69342B7423657E6700387E20 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		69342B7B23657F1F00387E20 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				69342B6F23657E6700387E20 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		69342B7C23657F3700387E20 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				69342B6A23657E5E00387E20 /* ViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		69342B7D23657F4700387E20 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				69342B7123657E6700387E20 /* LaunchScreen.storyboard */,
+				69342B6C23657E5E00387E20 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		69342B7E23657FCA00387E20 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				69342B7F2365805100387E20 /* Meal.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +192,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69342B802365805100387E20 /* Meal.swift in Sources */,
 				69342B6B23657E5E00387E20 /* ViewController.swift in Sources */,
 				69342B6723657E5E00387E20 /* AppDelegate.swift in Sources */,
 				69342B6923657E5E00387E20 /* SceneDelegate.swift in Sources */,
+				691144CE23658791000909D3 /* CellManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,7 +342,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8J39KF9DMS;
-				INFOPLIST_FILE = "Meal Tracker/Info.plist";
+				INFOPLIST_FILE = "Meal Tracker/App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +360,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8J39KF9DMS;
-				INFOPLIST_FILE = "Meal Tracker/Info.plist";
+				INFOPLIST_FILE = "Meal Tracker/App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
